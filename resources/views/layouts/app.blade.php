@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Unifiedtransform') }}</title>
+    <title>SIGEGMA</title>
 
     <link rel="shortcut icon" href="{{asset('favicon_io/favicon.ico')}}">
     <link rel="shortcut icon" sizes="16x16" href="{{asset('favicon_io/favicon-16x16.png')}}">
@@ -103,7 +103,7 @@
     </div>
 
     <div id="watermark">
-        <p>Unifiedtransform</p>
+        <p color='red'>SIGEGMA</p>
     </div>
 </body>
 </html>
