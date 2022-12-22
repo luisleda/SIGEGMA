@@ -12,7 +12,10 @@
         <link rel="apple-touch-icon" href="{{asset('favicon_io/apple-touch-icon.png')}}">
         <link rel="icon" href="{{asset('favicon_io/android-chrome-192x192.png')}}" sizes="192x192">
         <link rel="icon" href="{{asset('favicon_io/android-chrome-512x512.png')}}" sizes="512x512">
-
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -24,6 +27,10 @@
         <style>
             body {
                 font-family: 'Nunito', sans-serif;
+                background-image: url('favicon_io/fundo0.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
             }
         </style>
     </head>
@@ -34,7 +41,7 @@
                     @auth
                         <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
                     @else
-                        <a href="{{ route('login') }}" class="text-gray-900 dark:text-white" style="border: 1px solid #1a202c;padding: 5px;border-radius: 5px;">Login</a>
+                        <a style="display: none;" href="{{ route('login') }}" class="text-gray-900 dark:text-white" style="border: 1px solid #1a202c;padding: 5px;border-radius: 5px;">Login</a>
 
                         {{-- @if (Route::has('register'))
                             <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
@@ -42,8 +49,8 @@
                     @endauth
                 </div>
             @endif
-
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
+               
+            <!-- <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0" style="align-items: center;">
                     <h1 class="text-gray-900 dark:text-white"><img src="{{asset('favicon_io/android-chrome-512x512.png')}}" class="mr-2" height="144px" width="144px"><span style="font-size: 28px; color: #8a6dd9;">SIGEGMA</span> - <small>Desenvolvido por LABIGOV &nbsp;</small></h1>
                     <svg style="display: none;" viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
@@ -53,7 +60,7 @@
                     </svg>
                     <span style="display: none;" class="ml-4" style="font-size: 50px; color:#1a202c;">+</span>
                     <img style="display: block;" class="ml-4" src="{{asset('favicon_io/labgov.png')}}" height="70" alt="Bootstrap 5">
-                </div>
+                </div> -->
 
                 {{-- <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                     <div class="grid grid-cols-1 md:grid-cols-2">
@@ -132,11 +139,23 @@
                         </div>
                     </div> --}}
 
-                    <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
+                    <!-- <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
                         Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }}) . Bootstrap 5.x
+                    </div> -->
+                    
+                    <div class="col" align="center">
+                        <div class="p-3 text-light  rounded-3">
+                            <h3>Bem-vindo ao SIGEGMA!</h3>
+                            <p><i class="bi bi-emoji-heart-eyes"></i> Capacitando o servidor público.</p>
+                            <a class="btn btn-light" href="{{ url('/home') }}" role="button">Começar</a>
+                        </div>
                     </div>
+
+                    
                 </div>
             </div>
         </div>
     </body>
 </html>
+
+
