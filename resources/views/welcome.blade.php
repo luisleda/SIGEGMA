@@ -27,7 +27,7 @@
         <style>
             body {
                 font-family: 'Nunito', sans-serif;
-                background-image: url('favicon_io/fundo0.jpg');
+                background-image: url('favicon_io/fundo3.jpg');
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-size: cover;
@@ -142,15 +142,26 @@
                     <!-- <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
                         Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }}) . Bootstrap 5.x
                     </div> -->
-                    
-                    <div class="col" align="center">
-                        <div class="p-3 text-light  rounded-3">
-                            <h3>Bem-vindo ao SIGEGMA!</h3>
-                            <p><i class="bi bi-emoji-heart-eyes"></i> Capacitando o servidor público.</p>
-                            <a class="btn btn-light" href="{{ url('/home') }}" role="button">Começar</a>
+                    <div>  
+                        <div class="mx-auto rounded-3 float-start">
+                
+                                <div class="col " >
+                                    <div class=" p-3 text-primary  rounded-3 font-weight-bold">
+                                            <h2>Sistema de Gestão EGMA</h2>
+                                            <p><i class="bi bi-emoji-heart-eyes"></i> Capacitando o servidor público.</p>
+                                            <a class="btn btn-primary" style="border-radius: 32px;"  href="{{ url('/home') }}" role="button">Começar</a>
+                                    </div>
+                                </div>
                         </div>
-                    </div>
 
+                        <div class=" float-end" >
+                            
+                            <img src="favicon_io/casa.png" class="bd-placeholder-img rounded float-end" width="400" height="300"  >
+                            <!-- <svg src="favicon_io/predio0.jpg" class="bd-placeholder-img rounded float-end" width="200" height="200"></svg> -->
+
+                        </div>
+                        
+                    </div> 
                     
                 </div>
             </div>

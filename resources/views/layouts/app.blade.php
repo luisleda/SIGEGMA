@@ -27,10 +27,21 @@
    
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <style>
+            body {
+                font-family: 'Nunito', sans-serif;
+                /*background-image: url('favicon_io/sigema0.png');*/
+                background-color: whitesmoke;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+        </style>
 </head>
 <body>
     <div id="app">
-        <nav class="navbar sticky-top navbar-expand-md navbar-light bg-white border-btm-e6">
+        <nav class="navbar sticky-top navbar-expand-md navbar-light bg-white border-btm-e6" style="display: none;">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <i class="bi bi-house"></i> {{ config('app.name', 'Laravel') }}
@@ -102,8 +113,8 @@
         </main>
     </div>
 
-    <div id="watermark">
-        <p color='red'>SIGEGMA</p>
+    <div id="watermark" style="display: none;">
+        <p color='red'>Dev. Luís Leda</p>
     </div>
 </body>
 </html>
