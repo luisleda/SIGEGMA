@@ -10,7 +10,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 #cardbracao {
-  padding-top: 80px;
+  padding-top: 275px;
 }
 #watermark {
   color: #efefef;
@@ -32,6 +32,7 @@ body {
 /* .dashboard .card {
   background-color: transparent;
 } */
+
 
 .bg-dark {
   background-image: linear-gradient(-45deg,#1054a9,#179ceb);

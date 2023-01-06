@@ -1,9 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
+<body style="background-image: url('favicon_io/sigema0.png');">
 <div class="container">
     <div class="row justify-content-end mt-2">
-        <div class="col-md-6 mt-4 pt-5" id="cardbracao" >
+        <div class="col-md-6 mt-4" id="cardbracao" >
             <div class="card">
                 <div class="card-header bg-white">{{ __('Login') }}</div>
 
@@ -15,7 +16,7 @@
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Email address">
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Digite seu CPF">
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -70,4 +71,8 @@
         </div>
     </div>
 </div>
+    
+
+</body>
+
 @endsection

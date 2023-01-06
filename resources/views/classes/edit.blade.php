@@ -25,6 +25,13 @@
                                 <label for="class_name" class="form-label">Class Name</label>
                                 <input class="form-control" id="class_name" name="class_name" type="text" value="{{$schoolClass->class_name}}">
                             </div>
+                            <div>
+                            <select name="Área" aria-placeholder="Área">
+                                <option value="Desenvolvimento Tencico-Gerencial">Desenvolvimento Técnico-Gerencial</option>
+                                <option value="Desenvolvimento Pessoal">Desenvolvimento Pessoal e Institucional e Direitos Humanos</option>
+                                <option value="Desenvolvimento Tecnico">Desenvolvimento Técnico</option>
+                            </select>
+                            </div>
                             <button type="submit" class="btn btn-outline-primary"><i class="bi bi-check2"></i> Save</button>
                         </form>
                     </div>

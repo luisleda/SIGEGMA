@@ -26,7 +26,7 @@
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-start">
                                         <div class="ms-2 me-auto">
-                                            <div class="fw-bold"><i class="bi bi-person-lines-fill me-3"></i> Total de Docentes</div>
+                                            <div class="fw-bold"><i class="bi bi-person-lines-fill me-3"></i> Total de Instrutores</div>
                                         </div>
                                         <span class="badge bg-dark rounded-pill">{{$teacherCount}}</span>
                                     </div>
@@ -59,7 +59,7 @@
                         </div> --}}
                     </div>
                     @if($studentCount > 0)
-                    <div class="mt-3 d-flex align-items-center">
+                    <!-- <div class="mt-3 d-flex align-items-center">
                         <div class="col-3">
                             <span class="ps-2 me-2">Students %</span>
                             <span class="badge rounded-pill border" style="background-color: #0678c8;">Male</span>
@@ -76,18 +76,18 @@
                             <div class="progress-bar progress-bar-striped" role="progressbar" {!!$maleStudentPercentageStyle!!} aria-valuenow="{{$maleStudentPercentage}}" aria-valuemin="0" aria-valuemax="100">{{$maleStudentPercentage}}%</div>
                             <div class="progress-bar progress-bar-striped" role="progressbar" {!!$femaleStudentPercentageStyle!!} aria-valuenow="{{$femaleStudentPercentage}}" aria-valuemin="0" aria-valuemax="100">{{$femaleStudentPercentage}}%</div>
                           </div>
-                    </div>
+                    </div> -->
                     @endif
                     <div class="row align-items-md-stretch mt-4">
                         <div class="col">
                             <div class="p-3 text-white bg-dark rounded-3">
                                 <h3>Bem-vindo ao SIGEGMA!</h3>
-                                <p><i class="bi bi-emoji-heart-eyes"></i> Capacitando o servidor público.</p>
+                                <p><i class="bi bi-emoji-heart-eyes"></i> Área de cadastro inicial, inscrição nos cursos e demais formações disponíveis, dentre outros procedimentos online.</p>
                             </div>
                         </div>
                         <div class="col">
                             <div class="p-3 bg-white border rounded-3" style="height: 100%;">
-                                <h3>Laborátorio de Modernização e Inovação</h3>
+                               <!--Alterar para Logotipo--> <h3>Laborátorio de Modernização e Inovação</h3>
                                 <p class="text-end">EGMA <i class="bi bi-lightning"></i> <a href="https://egma.ma.gov.br/programas-ou-campanhas/conheca-o-labigov" target="_blank" style="text-decoration: none;">LABIGOV</a> <i class="bi bi-lightning"></i>.</p>
                             </div>
                         </div>

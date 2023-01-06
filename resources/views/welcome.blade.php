@@ -148,7 +148,7 @@
                                 <div class="col " >
                                     <div class=" p-3 text-primary  rounded-3 font-weight-bold">
                                             <h2>Sistema de Gestão EGMA</h2>
-                                            <p><i class="bi bi-emoji-heart-eyes"></i> Capacitando o servidor público.</p>
+                                            <p><i class="bi bi-emoji-heart-eyes"></i>Área de cadastro inicial, inscrição nos cursos e demais formações disponíveis, dentre outros procedimentos online Capacitando o servidor público.</p>
                                             <a class="btn btn-primary" style="border-radius: 32px;"  href="{{ url('/home') }}" role="button">Começar</a>
                                     </div>
                                 </div>
